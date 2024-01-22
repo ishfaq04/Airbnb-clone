@@ -1,0 +1,42 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="row mt-3">
+    <h1 class="col-md-6 offset-md-3"><b>Compass</b> &nbsp;&nbsp;<i class="fa-regular fa-compass"></i></h1>
+    <div class="col-md-6 offset-md-3">
+        <form method="POST" action="/signup" class="needs-validation" novalidate>
+
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username"  class="form-control" required>
+                
+                <div class="valid-feedback">Looks good!</div>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email"  class="form-control" required>
+
+            </div>
+
+            <div class="mb-3">
+                <label for="usertype" class="form-label">Choose Account Type</label>
+                <select name="usertype" id="usertype" class="form-select" aria-label="Default select example" required>
+                    <option selected></option>
+                    <option value="owner">Listing Owner</option>
+                    <option value="visitor">Visitor</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password"  class="form-control" required>
+
+            </div>
+
+            <div>
+                <button class="btn btn-success">SignUp</button>
+            </div>
+        </form>
+    </div>
+</div>
